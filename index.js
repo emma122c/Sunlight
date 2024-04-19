@@ -92,7 +92,7 @@ const mqttInit = () => {
 
 mqttInit()
 
-client.subscribe('raspberry/+')
+client.subscribe('sunlight')
   //når vi modtager beskeder fra MQTT serveren kaldes denne funktion
   client.on('message', (topic, message) => {
     let obj

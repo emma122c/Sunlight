@@ -95,6 +95,7 @@ mqttInit()
 client.subscribe('sunlight')
   //når vi modtager beskeder fra MQTT serveren kaldes denne funktion
   client.on('message', (topic, message) => {
+    alert('modtog besked)
     let obj
     try {
       obj = JSON.parse(message)
